@@ -1,5 +1,4 @@
-
-# Импорт библиотек и регестрация бота
+# Импорт библиотек и регистрация бота
 import telebot
 from telebot import types
 import asana
@@ -12,6 +11,8 @@ taskproject = config.taskproject
 workspace_id = config.workspace_id
 hi_msg = config.hi_msg
 bay_msg = config.bay_msg
+cant_make_a_ticket = config.cant_make_a_ticket
+partial_ticket = config.particial_ticket
 
 bot = telebot.TeleBot(Token)
 client = asana.Client.access_token(AsanaToken)
